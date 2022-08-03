@@ -1,6 +1,7 @@
 {
   "name": "saas-velzon-react",
   "version": "0.1.0",
+  "homepage": "https://{username}.github.io",
   "private": true,
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^32.0.0",
@@ -97,6 +98,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build --max_old_space_size=8000 build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
@@ -160,6 +163,7 @@
     "moment": "2.29.1"
   },
   "devDependencies": {
-    "babel-plugin-prismjs": "^2.1.0"
+    "babel-plugin-prismjs": "^2.1.0",
+    "gh-pages": "^4.0.0"
   }
 }
